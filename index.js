@@ -87,8 +87,20 @@ exports.password = function(msg, mask){
         process.exit();
       }
 
-      process.stdout.write(mask);
-      buf += c;
+      if (key && key.name === 'backspace') {
+        if (buf.length > 0) {
+          buf = buf.slice(0, -1);
+          process.stdout.clearLine();
+          process.stdout.cursorTo(0);
+          process.stdout.write(msg);
+          for (let i = 0; i < buf.length; i += 1) {
+            process.stdout.write(mask);
+          }
+        }
+      } else {
+        process.stdout.write(mask);
+        buf += c;
+      }
     }).resume();
   }
 };

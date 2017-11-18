@@ -3,6 +3,8 @@
 
   Sane terminal user-input for nodejs that return thunks for [co](https://github.com/visionmedia/co).
 
+백스페이스 입력 안되는 버그 개선
+
 ## Installation
 
 ```

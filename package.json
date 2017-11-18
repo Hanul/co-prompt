@@ -1,5 +1,5 @@
 {
-  "name": "co-prompt",
+  "name": "hanul-co-prompt",
   "version": "1.0.0",
   "description": "simple terminal user input 'co'",
   "keywords": [
@@ -22,6 +22,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/visionmedia/co-prompt.git"
+    "url": "https://github.com/Hanul/co-prompt.git"
   }
 }
